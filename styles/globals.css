@@ -98,12 +98,16 @@ header{
   background-color: white;
   grid-column-start: span 2;
   border-radius: 0 0 1em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 nav{
   margin-top: 1em;
   background-color: white;
   border-radius: 0  1em 1em 0;
+  justify-content: center;
 }
 
 a {
