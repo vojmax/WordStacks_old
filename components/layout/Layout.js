@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./header/Header";
-import Nav from "./Nav";
+import Nav from "./navigation/Nav";
 
 export default function Layout({ children }) {
 	return (

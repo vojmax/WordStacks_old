@@ -33,10 +33,10 @@ header {
 }
 
 nav {
+	display: flex;
 	margin-top: 1em;
 	background-color: white;
 	border-radius: 0 1em 1em 0;
-	justify-content: center;
 }
 
 a {

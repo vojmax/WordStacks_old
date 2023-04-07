@@ -1,11 +1,20 @@
 .nav_list {
+	padding-top: 1em;
+	width: 200px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
 	list-style-type: none;
 }
 
-.nav_list li {
+.link {
+	color: black;
 	padding: 1em;
 	/* border-right: 5px solid rgb(87, 0, 128); */
+}
+
+.link_active {
+	color: rgb(102, 0, 128);
+	padding: 1em;
+	border-right: 4px solid rgb(102, 0, 128);
 }
