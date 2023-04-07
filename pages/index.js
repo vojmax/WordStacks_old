@@ -1,8 +1,3 @@
-
 export default function HomePage() {
-  return (
-      <div>
-        main
-      </div>
-  )
+	return <div>Senka mala beba</div>;
 }
