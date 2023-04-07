@@ -1,0 +1,21 @@
+.ui_button {
+	border: none;
+	padding: 0.8em;
+	color: white;
+	font-size: x-large;
+	background-color: rgb(126, 68, 224);
+	border-radius: 0.5em;
+}
+
+.ui_button:hover {
+	background-color: rgb(150, 111, 217);
+}
+
+.ui_button:active {
+	background-color: rgb(100, 73, 145);
+}
+
+.ui_button:disabled {
+	color: rgb(119, 106, 129);
+	background-color: rgb(170, 156, 174);
+}
