@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { BsStack } from "react-icons/bs";
 
 import classes from "./Nav.module.css";
 
@@ -14,7 +15,8 @@ export default function Nav() {
 					href="/"
 					className={currentRoute === "/" ? classes.link_active : classes.link}
 				>
-					Stacks
+					<BsStack />
+					<span>Stacks</span>
 				</Link>
 
 				<Link
