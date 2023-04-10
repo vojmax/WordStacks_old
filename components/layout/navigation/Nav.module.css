@@ -8,28 +8,34 @@
 }
 
 .link {
-	font-weight: 500;
 	font-size: 1.2em;
 	width: 200px;
 	color: black;
-	padding: 1em 1em 1em 3em;
+	padding: 1em 1em 1em 1.5em;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 }
 
-.link span {
-	color: black;
+.link svg {
+	height: 1.5em;
+	width: 1.5em;
+	margin-right: 1em;
 }
 
 .link_active {
+	background-color: #6f22ff12;
+	color: black;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	font-size: 1.3em;
-	font-weight: 500;
+	font-size: 1.2em;
 	width: 200px;
-	color: rgb(102, 0, 128);
-	padding: 1em 1em 1em 3em;
-	border-right: 4px solid rgb(102, 0, 128);
+	padding: 1em 1em 1em 1.5em;
+	border-right: 4px solid #7122ff;
+}
+
+.link_active svg {
+	height: 1.5em;
+	width: 1.5em;
+	margin-right: 1em;
+	color: #7122ff;
 }

@@ -1,6 +1,14 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { BsStack } from "react-icons/bs";
+import { AiFillAppstore } from "react-icons/ai";
+import {
+	MdLayers,
+	MdAccountBox,
+	MdEmail,
+	MdFactCheck,
+	MdChat,
+	MdInsertChart,
+} from "react-icons/md";
 
 import classes from "./Nav.module.css";
 
@@ -15,8 +23,8 @@ export default function Nav() {
 					href="/"
 					className={currentRoute === "/" ? classes.link_active : classes.link}
 				>
-					<BsStack />
-					<span>Stacks</span>
+					<MdLayers />
+					Stacks
 				</Link>
 
 				<Link
@@ -25,6 +33,7 @@ export default function Nav() {
 						currentRoute === "/tests" ? classes.link_active : classes.link
 					}
 				>
+					<MdFactCheck />
 					Tests
 				</Link>
 
@@ -34,6 +43,7 @@ export default function Nav() {
 						currentRoute === "/stats" ? classes.link_active : classes.link
 					}
 				>
+					<MdInsertChart />
 					Stats
 				</Link>
 				<Link
@@ -42,6 +52,7 @@ export default function Nav() {
 						currentRoute === "/messages" ? classes.link_active : classes.link
 					}
 				>
+					<MdEmail />
 					Messages
 				</Link>
 				<Link
@@ -50,6 +61,7 @@ export default function Nav() {
 						currentRoute === "/account" ? classes.link_active : classes.link
 					}
 				>
+					<MdAccountBox />
 					Account
 				</Link>
 			</ul>
