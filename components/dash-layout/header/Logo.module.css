@@ -1,4 +1,5 @@
-.link {
+.logo {
+	width: 200px;
 	display: flex;
 	align-items: center;
 	padding-left: 1em;
@@ -8,7 +9,7 @@
 	color: rgb(86, 21, 207);
 }
 
-.link span {
+.logo span {
 	font-weight: 600;
 	color: black;
 	padding-left: 0.5em;

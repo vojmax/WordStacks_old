@@ -6,7 +6,7 @@ import classes from "./Logo.module.css";
 
 export default function Logo() {
 	return (
-		<Link href="/" className={classes.link}>
+		<Link href="/" className={classes.logo}>
 			<BsStack />
 			<span>Word</span>
 			Stacks

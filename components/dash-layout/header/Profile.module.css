@@ -1,7 +1,9 @@
 .profile {
+	width: 200px;
+	padding-right: 2em;
 	display: flex;
+	justify-content: flex-end;
 	align-items: center;
-	margin-right: 2em;
 }
 
 .profile button {
