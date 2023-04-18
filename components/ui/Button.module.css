@@ -11,7 +11,6 @@
 .header_button:hover {
 	background-image: linear-gradient(#7122ff, #9255ff);
 	border: #7122ff solid 1px;
-	box-shadow: 0 0 1em 0.2em #6f22ff5b;
 }
 
 .header_button:active {

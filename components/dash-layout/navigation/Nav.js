@@ -1,12 +1,10 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { AiFillAppstore } from "react-icons/ai";
 import {
-	MdLayers,
+	MdApps,
 	MdAccountBox,
 	MdEmail,
 	MdFactCheck,
-	MdChat,
 	MdInsertChart,
 } from "react-icons/md";
 
@@ -20,17 +18,23 @@ export default function Nav() {
 		<nav>
 			<ul className={classes.nav_list}>
 				<Link
-					href="/"
-					className={currentRoute === "/" ? classes.link_active : classes.link}
+					href="/dashboard/stacks"
+					className={
+						currentRoute === "/dashboard/stacks"
+							? classes.link_active
+							: classes.link
+					}
 				>
-					<MdLayers />
+					<MdApps />
 					Stacks
 				</Link>
 
 				<Link
-					href="/tests"
+					href="/dashboard/tests"
 					className={
-						currentRoute === "/tests" ? classes.link_active : classes.link
+						currentRoute === "/dashboard/tests"
+							? classes.link_active
+							: classes.link
 					}
 				>
 					<MdFactCheck />
@@ -38,27 +42,33 @@ export default function Nav() {
 				</Link>
 
 				<Link
-					href="/stats"
+					href="/dashboard/stats"
 					className={
-						currentRoute === "/stats" ? classes.link_active : classes.link
+						currentRoute === "/dashboard/stats"
+							? classes.link_active
+							: classes.link
 					}
 				>
 					<MdInsertChart />
 					Stats
 				</Link>
 				<Link
-					href="/messages"
+					href="/dashboard/messages"
 					className={
-						currentRoute === "/messages" ? classes.link_active : classes.link
+						currentRoute === "/dashboard/messages"
+							? classes.link_active
+							: classes.link
 					}
 				>
 					<MdEmail />
 					Messages
 				</Link>
 				<Link
-					href="/account"
+					href="/dashboard/account"
 					className={
-						currentRoute === "/account" ? classes.link_active : classes.link
+						currentRoute === "/dashboard/account"
+							? classes.link_active
+							: classes.link
 					}
 				>
 					<MdAccountBox />

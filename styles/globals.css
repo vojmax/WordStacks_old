@@ -10,13 +10,12 @@
 
 html,
 body {
-	height: 100%;
 	overflow: clip;
 	flex-grow: 1;
 	background-color: #e2e2e2;
 }
 
-.layout {
+.dash_layout {
 	height: 100vh;
 	display: grid;
 	grid-template-rows: 1fr 8fr;
@@ -25,8 +24,8 @@ body {
 
 header {
 	background-color: white;
+	border-bottom: 1px solid rgb(175, 175, 175);
 	grid-column-start: span 2;
-	border-radius: 0 0 1em 1em;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -34,9 +33,7 @@ header {
 
 nav {
 	display: flex;
-	margin-top: 1em;
 	background-color: white;
-	border-radius: 0 1em 1em 0;
 }
 
 a {

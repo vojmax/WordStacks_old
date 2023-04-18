@@ -1,10 +1,10 @@
-import Layout from "@/components/layout/Layout";
+import DashLayout from "@/components/dash-layout/DashLayout";
 import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }) {
 	return (
-		<Layout>
+		<DashLayout>
 			<Component {...pageProps} />
-		</Layout>
+		</DashLayout>
 	);
 }
