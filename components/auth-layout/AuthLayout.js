@@ -1,9 +1,10 @@
 import React from "react";
+import Welcome from "./Welcome";
 
 export default function AuthLayout({ children }) {
 	return (
 		<div className="auth_layout">
-			<div>Welcome</div>
+			<Welcome />
 			<main>{children}</main>
 		</div>
 	);
