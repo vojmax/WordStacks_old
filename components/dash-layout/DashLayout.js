@@ -1,13 +1,26 @@
 import React from "react";
 import Header from "./header/Header";
 import Nav from "./navigation/Nav";
+import { useSession } from "next-auth/react";
+import Welcome from "../auth-layout/Welcome";
 
-export default function DashLayout({ children }) {
+export default function Layout({ children }) {
+	const { data: session } = useSession();
+
 	return (
-		<div className="dash_layout">
-			<Header />
-			<Nav />
-			<main>{children}</main>
+		<div>
+			{session ? (
+				<div className="dash_layout">
+					<Header />
+					<Nav />
+					<main>{children}</main>
+				</div>
+			) : (
+				<div className="auth_layout">
+					<Welcome />
+					<main>{children}</main>
+				</div>
+			)}
 		</div>
 	);
 }

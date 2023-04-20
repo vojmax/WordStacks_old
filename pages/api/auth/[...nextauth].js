@@ -2,9 +2,16 @@ import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import FacebookProvider from "next-auth/providers/facebook";
 import AppleProvider from "next-auth/providers/apple";
+import GithubProvider from "next-auth/providers/github";
+import { MongoDBAdapter } from "@next-auth/mongodb-adapter";
+import clientPromise from "@/lib/db";
 import Email from "next-auth/providers/email";
 export const authOptions = {
 	providers: [
+		GithubProvider({
+			clientId: process.env.GITHUB_ID,
+			clientSecret: process.env.GITHUB_SECRET,
+		}),
 		FacebookProvider({
 			clientId: process.env.FACEBOOK_ID,
 			clientSecret: process.env.FACEBOOK_SECRET,
@@ -35,6 +42,7 @@ export const authOptions = {
 			return token;
 		},
 	},
+	adapter: MongoDBAdapter(clientPromise),
 };
 
 export default NextAuth(authOptions);
