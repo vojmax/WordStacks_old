@@ -1,7 +1,7 @@
-import React from "react";
-import StackCard from "@/components/ui/StackCard";
+import dynamic from "next/dynamic";
+import { Card, Grid, Page } from "@geist-ui/core";
+import StackCard from "../../../components/ui/StackCard";
 import GridContainer from "@geist-ui/core/esm/grid/grid-container";
-import { Card, Grid } from "@geist-ui/core";
 
 export default function StacksPage() {
 	const cardsArray = [
@@ -37,15 +37,11 @@ export default function StacksPage() {
 
 	return (
 		<>
-			<div
-				style={{ display: "block", height: "80px", backgroundColor: "grey" }}
-			>
-				header
-			</div>
-			<GridContainer gap={2}>
+			<GridContainer gap={2} margin={1}>
+				<Grid style={{ height: "80px", backgroundColor: "grey" }}>header</Grid>
 				{cardsArray.map((card) => {
 					return (
-						<Grid xl={5} key={card.id} width="100%">
+						<Grid xs={8} xl={6} key={card.id} width="100%">
 							<StackCard id={card.id} title={card.title} />
 						</Grid>
 					);
