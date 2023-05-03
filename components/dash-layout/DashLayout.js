@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./header/Header";
 import Nav from "./navigation/Nav";
 import { useSession } from "next-auth/react";
-import Welcome from "../auth-layout/Welcome";
+import Welcome from "./Welcome";
 
 export default function Layout({ children }) {
 	const { data: session } = useSession();

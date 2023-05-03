@@ -12,7 +12,7 @@ html,
 body {
 	overflow: clip;
 	flex-grow: 1;
-	background-color: #e2e2e2;
+	background-color: #e0e0e0;
 }
 
 .dash_layout {

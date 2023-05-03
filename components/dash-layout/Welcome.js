@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../dash-layout/header/Logo";
+import Logo from "./header/Logo";
 
 export default function Welcome() {
 	return (
